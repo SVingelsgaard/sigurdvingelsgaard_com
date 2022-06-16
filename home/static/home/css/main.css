@@ -1,73 +1,19 @@
 
+*
+{
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 
-body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
 }
-
-.navbar {
-    background: black;
-  }
-  
-  .navbar .text-logo {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-size: 1.6em;
-  }
-  
-  .navbar nav {
-    display: none;
-  }
-  
-  .navbar .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    place-content: space-between;
-    padding: .6em 1em;
-  }
-  
-  .navbar .mobile-menu {
-    height: 1.3em;
-    padding-top: 0.55em;
-    cursor: pointer;
-  }
-  
-  nav.menu-btn {
-    display: block;
-  }
-  
-  nav {
-    position: fixed;
-    z-index: 999;
-    width: 66%;
-    right: 0;
-    top: 0;
-    background: black;
-    height: 100vh;
-    padding: 1em;
-  }
-  
-  nav ul.Primary-nav {
-    margin-top: 5em;
-  }
-  
-  nav li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: .5em;
-    font-size: 1.5em;
-    text-align: right;
-  }
-  
-  nav li a:hover {
-    font-weight: bold;
-  }
-  
-  nav .Mobile-menu-exit {
-    float: right;
-    margin: .5em;
-    cursor: pointer;
-  }
+.banner{
+  position: relative;
+  min-height: 100vh;
+  background: url(../images/background.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
