@@ -8,13 +8,7 @@
   box-sizing: 0;
 
 }
-.header{
-  position: relative;
-  min-height: 100vh;
-  background: url(../images/background.jpg);
-  background-size: cover;
-  background-position: right;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header .background{
+  size: contain;
+  width: 100%;
 }
