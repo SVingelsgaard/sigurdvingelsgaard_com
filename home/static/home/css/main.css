@@ -1,14 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap");
+@import url("https://use.typekit.net/fjw5ewx.css");
+@import url("https://use.typekit.net/bgj0ctu.css");
+:root {
+  --mainColor: rgb(255, 0, 0);
+}
 
-*
-{
-  background-color: rgb(255, 255, 255);
-  margin: 0;
+* {
+  font-family: "new-order";
+}
+
+body {
   padding: 0;
-  box-sizing: 0;
+  margin: 0;
+  background-color: var(--mainColor);
+}
 
+a {
+  text-decoration: none;
 }
-.header .background{
-  size: contain;
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  padding-block: 0.5em;
+  margin: 0;
   width: 100%;
+  height: 40px;
+  place-content: space-between;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.3);
 }
+header button {
+  display: none;
+}
+header a {
+  color: white;
+}
+header .logo-parent {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  -webkit-padding-start: 0.75em;
+          padding-inline-start: 0.75em;
+}
+header .logo {
+  font-family: "ethnocentric" !important;
+  font-size: xx-large;
+}
+header nav {
+  padding-right: 0.5em;
+}
+header nav li {
+  padding-inline: 0.5em;
+}
+header nav li a {
+  padding: 1em;
+}
+header nav li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 48em) {
+  .primary-navigation {
+    gap: 2em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 50%;
+    flex-direction: column;
+    padding: min(15vh, 10rem) 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgba(49, 49, 49, 0.904);
+    transform: translateX(100%);
+    transition: transform 300ms ease-out;
+  }
+  .primary-navigation a {
+    color: white;
+  }
+  .primary-navigation a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .primary-navigation[data-visible=true] {
+    transform: translateX(0%);
+  }
+
+  @supports ((-webkit-backdrop-filter: blur(1em)) or (backdrop-filter: blur(1em))) {
+    .primary-navigation {
+      background: rgba(0, 0, 0, 0.5) !important;
+      -webkit-backdrop-filter: blur(0.8rem);
+              backdrop-filter: blur(0.8rem);
+    }
+  }
+  .mobile-nav-toggle {
+    position: absolute;
+    right: 0.5em;
+    margin-top: 0.5em;
+    display: block;
+    z-index: 9999;
+    background-image: url("../images/menu.svg");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 26px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .mobile-nav-toggle[aria-expanded=true] {
+    background-image: url("../images/Exit-menu.svg");
+  }
+}/*# sourceMappingURL=main.css.map */
