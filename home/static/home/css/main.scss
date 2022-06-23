@@ -33,8 +33,10 @@ header {
     width: 100%;
     height: 40px;
     place-content: space-between;
-    z-index: 100000;
-    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(.8rem);
+
 
     button {
         display: none;
@@ -68,6 +70,31 @@ header {
     }
 
 }
+
+
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    z-index: -1;
+    
+    .textBox{
+        margin: 0;
+        
+        position: absolute;
+        top: 40%;
+        left: min(5em,10%);  
+        h2{
+            color: white;
+        }
+        
+    }
+    
+}
 @media (max-width: 48em) {
 
     .primary-navigation {
@@ -82,15 +109,17 @@ header {
         gap: 2em;
 
         position: fixed;
-        z-index: 1000;
+        z-index: 2;
         inset: 0 0 0 50%;
 
         flex-direction: column;
-        padding: Min(15vh, 10rem) 2em;
+        
         margin-top: 0;
         margin-bottom: 0;
 
-        background: rgba(49, 49, 49, 0.904);
+        padding-top: 80px;
+        padding-bottom: 100%;
+        background: rgba(0, 0, 0, 0.5);
 
         transform: translateX(100%);
         transition: transform 300ms ease-out;
@@ -108,11 +137,11 @@ header {
         }
     }
     .mobile-nav-toggle {
-        position: absolute;
+        position: fixed;
         right: .5em;
         margin-top: .5em;
         display: block;
-        z-index: 9999;
+        z-index: 3;
         background-image: url('../images/menu.svg');
         background-repeat: no-repeat;
         width: 36px;
