@@ -15,6 +15,7 @@
     </head>
 
     <body>
+        <div class="loader"></div>
         <header class="navbar flex">
             <div class="logo-parent">
                 <a href="" class="logo">SIGURD</a>
@@ -34,38 +35,62 @@
             </nav>
         </header>
         <section class="hero fwh">
-            <div class="textBox">
+            <div class="heroTextBox">
                 <h2 class="text">Sigurd Vingelsgaard.</h2>
             </div>
         </section>
 
         <section class="projects fwh">
             <div class="textBox">
-                <h2 class="text">Sigurd Vingelsgaard.</h2>
+                <h2 class="text">Projects</h2>
             </div>
         </section>
 
         <section class="electrical fwh">
             <div class="textBox">
-                <h2 class="text">Sigurd Vingelsgaard.</h2>
+                <h2 class="text">Electrical</h2>
             </div>
         </section>
 
         <section class="mechanical fwh">
             <div class="textBox">
-                <h2 class="text">Sigurd Vingelsgaard.</h2>
+                <h2 class="text">Mechanical</h2>
             </div>
         </section>
         
         <section class="software fwh">
             <div class="textBox">
-                <h2 class="text">Sigurd Vingelsgaard.</h2>
+                <h2 class="text">Software</h2>
             </div>
         </section>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/linkedin.svg'  %}'></a>
+                    <a href="https://github.com/SVingelsgaard" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/github.svg'  %}'></a>
+                    <a href="https://www.instagram.com/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/instagram.svg'  %}'></a>
+                    <a href="https://www.facebook.com/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/facebook.svg'  %}'></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><b>Contact @</b></li>
+                    <li class="list-inline-item ">Mail: sigurd@vingelsgaard.no</li>
+                    <li class="list-inline-item">Tlf.: +47 95 96 50 77</li>
+                </ul>
+                <p class="copyright">Sigurd Vingelsgaard - 2022</p>
+            </footer>
+        </div>
     </body>
 </html>
 
 <script>
+    //loading site shit
+    const loader = document.querySelector(".loader");
+    var load = false;
+    var time = false;
+    window.addEventListener("load", () =>{
+        loader.classList.add("loaderHidden");
+    })
+
     const primaryNav = document.querySelector(".primary-navigation");
     const navToggle = document.querySelector(".mobile-nav-toggle");
     //const newNavToggle = document.querySelectorAll("body > header:not()");
