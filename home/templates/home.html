@@ -4,16 +4,132 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         
         <title>Sigurd Vingelsgaard</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="{%  static  "home/css/main.css"  %}">
-        <link rel="icon" type="image/png" href="{%  static  "home/images/s.png"  %}">
+        <link rel='stylesheet' type='text/css' media='screen' href='{%  static  'home/css/main.css'  %}'>
+        <link rel='icon' type='image/png' href='{%  static  'home/images/s.png'  %}'>
         
     </head>
+
     <body>
-        comming soon
+        <div class="loader"></div>
+        <header class="navbar flex">
+            <div class="logo-parent">
+                <a href="" class="logo">SIGURD</a>
+            </div>
+
+            <div class="mobile-nav-toggle-parent">
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+            </div>
+
+            <nav>
+                <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                    <li><a>Prodjects</a></li>
+                    <li><a>Electrical</a></li>
+                    <li><a>Mechanical</a></li>
+                    <li><a>Software</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero fwh">
+            <div class="heroTextBox">
+                <h2 class="text">Sigurd Vingelsgaard.</h2>
+            </div>
+        </section>
+
+        <section class="projects fwh">
+            <div class="textBox">
+                <h2 class="text">Projects</h2>
+            </div>
+        </section>
+
+        <section class="electrical fwh">
+            <div class="textBox">
+                <h2 class="text">Electrical</h2>
+            </div>
+        </section>
+
+        <section class="mechanical fwh">
+            <div class="textBox">
+                <h2 class="text">Mechanical</h2>
+            </div>
+        </section>
+        
+        <section class="software fwh">
+            <div class="textBox">
+                <h2 class="text">Software</h2>
+            </div>
+        </section>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/linkedin.svg'  %}'></a>
+                    <a href="https://github.com/SVingelsgaard" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/github.svg'  %}'></a>
+                    <a href="https://www.instagram.com/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/instagram.svg'  %}'></a>
+                    <a href="https://www.facebook.com/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/facebook.svg'  %}'></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><b>Contact @</b></li>
+                    <li class="list-inline-item ">Mail: sigurd@vingelsgaard.no</li>
+                    <li class="list-inline-item">Tlf.: +47 95 96 50 77</li>
+                </ul>
+                <p class="copyright">Sigurd Vingelsgaard - 2022</p>
+            </footer>
+        </div>
     </body>
 </html>
+
+<script>
+    //loading site shit
+    const loader = document.querySelector(".loader");
+    window.addEventListener("load", () =>{
+        loader.classList.add("loaderHidden");
+    })
+
+    const primaryNav = document.querySelector(".primary-navigation");
+    const navToggle = document.querySelector(".mobile-nav-toggle");
+    //const newNavToggle = document.querySelectorAll("body > header:not()");
+    const section = document.querySelector('section');
+
+
+    const openAndClose = () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+
+        if (visibility === 'false') {
+            primaryNav.setAttribute("data-visible", true);
+            navToggle.setAttribute("aria-expanded", true);
+        } else if (visibility === 'true') {
+            primaryNav.setAttribute("data-visible", false);
+            navToggle.setAttribute("aria-expanded", false);
+        }
+    };
+
+    const close = () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+    
+    if (visibility === 'true') {
+        primaryNav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
+    };
+    };
+
+    navToggle.addEventListener("click", openAndClose);
+
+    //Click anywhere to close navbar
+    section.addEventListener("click", close);
+
+
+
+    //Weird mobile-nav transition fix
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+    document.body.classList.add("resize-animation-stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        document.   body.classList.remove("resize-animation-stopper");
+    }, 400);
+    });
+</script>
