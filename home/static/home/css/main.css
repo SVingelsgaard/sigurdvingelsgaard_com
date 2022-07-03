@@ -593,7 +593,7 @@ header nav li a:hover {
     margin-top: 0.5em;
     display: block;
     z-index: 3;
-    background-image: url("../images/Exit-menu.svg");
+    background-image: url("../images/menu.svg");
     background-repeat: no-repeat;
     width: 36px;
     height: 26px;
@@ -604,6 +604,6 @@ header nav li a:hover {
   }
 
   .mobile-nav-toggle[aria-expanded=true] {
-    background-image: url("../images/menu.svg");
+    background-image: url("../images/Exit-menu.svg");
   }
 }/*# sourceMappingURL=main.css.map */
