@@ -1,0 +1,256 @@
+@import url("https://use.typekit.net/fjw5ewx.css");
+@import url("https://use.typekit.net/bgj0ctu.css");
+
+:root {
+    --mainColor: rgb(0, 0, 0);
+}
+
+* {
+    font-family: "new-order";
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    z-index: 100;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loaderHidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--mainColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    padding-block: .5em;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    place-content: space-between;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(.8rem);
+
+
+    button {
+        display: none;
+    }
+    a {
+        color: white;
+    }
+    .logo-parent{
+        display: flex;
+        align-items: center;
+        vertical-align: center;
+        padding-inline-start: .75em;
+    }
+    .logo {
+        font-family: "ethnocentric" !important;
+        font-size: xx-large;
+    }
+    nav {
+        padding-right: .5em;
+        li {
+            padding-inline: .5em;
+            a {
+                padding: 1em;
+                &:hover {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+        
+        
+    }
+
+}
+
+
+
+.hero {
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    z-index: -1;
+    
+    .heroTextBox{
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: min(5em,10%);  
+        h2{
+            color: white;
+        }
+        
+    }
+    
+}
+
+.fwh{
+    height: 100vh;
+    box-sizing: border-box;
+}
+.textBox{
+    position: relative;
+    margin: 0;
+    top: 2em;
+    width: 100%;
+    text-align: center;
+    h2{
+        margin: 0;
+        color: white;
+    }
+    
+}
+
+.projects{
+    background: red;
+}
+.electrical{
+    background: green;
+}
+.mechanical{
+    background-color: orange;
+}
+.software{
+    background-color: purple;
+}
+
+
+.footer-basic {
+    padding:40px 0;
+    background-color: var(--mainColor);
+    color:white;
+  }
+  
+    .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+  }
+  
+    .footer-basic li {
+        padding:0 10px;
+    }
+    
+    .footer-basic ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+    }
+    
+    .footer-basic ul a:hover {
+        opacity:1;
+    }
+    
+    .footer-basic .social {
+        text-align:center;
+        padding-bottom:10px;
+    }
+    
+    .footer-basic .social > a {
+        font-size:24px;
+        width:40px;
+        display:inline-block;
+        margin:0 8px;
+    }
+    
+    .footer-basic .social > a:hover {
+        opacity:.7;
+    }
+
+    .footer-basic .copyright {
+        margin-top:30px;
+        text-align:center;
+        font-size:13px;
+        color:#aaa;
+        margin-bottom:0;
+    }
+
+
+@media (max-width: 48em) {
+
+    .primary-navigation {
+
+        a {
+            color: white;
+            &:hover {
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+        }
+        gap: 2em;
+
+        position: fixed;
+        z-index: 2;
+        inset: 0 0 0 50%;
+
+        flex-direction: column;
+        
+        margin-top: 0;
+        margin-bottom: 0;
+
+        padding-top: 80px;
+        padding-bottom: 100vh;
+
+        transform: translateX(100%);
+        transition: transform 300ms ease-out;
+
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    @supports (backdrop-filter: blur(1em)) {
+        .primary-navigation {
+            background: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(.8rem);
+        }
+    }
+    .mobile-nav-toggle {
+        position: fixed;
+        right: .5em;
+        margin-top: .5em;
+        display: block;
+        z-index: 3;
+        background-image: url('../images/menu.svg');
+        background-repeat: no-repeat;
+        width: 36px;
+        height: 26px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url('../images/Exit-menu.svg');
+    }
+}
