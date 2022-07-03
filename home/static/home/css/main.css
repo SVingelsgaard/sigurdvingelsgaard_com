@@ -390,14 +390,6 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--mainColor);
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 a {
@@ -448,8 +440,8 @@ header nav li {
   padding-inline: 0.5em;
 }
 header nav li a {
-  padding: 1em;
   cursor: pointer;
+  padding: 1em;
 }
 header nav li a:hover {
   color: rgba(255, 255, 255, 0.5);
