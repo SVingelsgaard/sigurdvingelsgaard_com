@@ -2,7 +2,7 @@
 @import url("https://use.typekit.net/bgj0ctu.css");
 
 :root {
-    --mainColor: rgb(187, 88, 88);
+    --mainColor: rgb(0, 0, 0);
     --duration: 1.5s;
 	--container-size: 250px;
 	--box-size: 33px;
@@ -109,6 +109,11 @@
 .loaderHidden{
     opacity: 0;
     visibility: hidden;
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
 }
 
 body {
@@ -327,16 +332,18 @@ header {
         margin-top: .5em;
         display: block;
         z-index: 3;
-        background-image: url('../images/menu.svg');
+        background-image: url('../images/Exit-menu.svg');
         background-repeat: no-repeat;
         width: 36px;
         height: 26px;
         border: 0;
         background-color: transparent;
         cursor: pointer;
+        z-index: 100;
+
 
     }
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url('../images/Exit-menu.svg');
+        background-image: url('../images/menu.svg');
     }
 }

@@ -2,7 +2,7 @@
 @import url("https://use.typekit.net/fjw5ewx.css");
 @import url("https://use.typekit.net/bgj0ctu.css");
 :root {
-  --mainColor: rgb(187, 88, 88);
+  --mainColor: rgb(0, 0, 0);
   --duration: 1.5s;
   --container-size: 250px;
   --box-size: 33px;
@@ -448,7 +448,7 @@ header nav li a:hover {
 }
 
 .hero {
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/background.ae23c2d9c8c0.jpg");
   background-size: contain;
   z-index: -1;
 }
@@ -587,7 +587,7 @@ header nav li a:hover {
     margin-top: 0.5em;
     display: block;
     z-index: 3;
-    background-image: url("../images/menu.svg");
+    background-image: url("../images/menu.1869fc3560b4.svg");
     background-repeat: no-repeat;
     width: 36px;
     height: 26px;
@@ -597,6 +597,6 @@ header nav li a:hover {
   }
 
   .mobile-nav-toggle[aria-expanded=true] {
-    background-image: url("../images/Exit-menu.svg");
+    background-image: url("../images/Exit-menu.8e55b2c5e9c8.svg");
   }
 }/*# sourceMappingURL=main.css.map */

@@ -386,6 +386,12 @@
   visibility: hidden;
 }
 
+.resize-animation-stopper * {
+  -webkit-animation: none !important;
+          animation: none !important;
+  transition: none !important;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -587,16 +593,17 @@ header nav li a:hover {
     margin-top: 0.5em;
     display: block;
     z-index: 3;
-    background-image: url("../images/menu.svg");
+    background-image: url("../images/Exit-menu.svg");
     background-repeat: no-repeat;
     width: 36px;
     height: 26px;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    z-index: 100;
   }
 
   .mobile-nav-toggle[aria-expanded=true] {
-    background-image: url("../images/Exit-menu.svg");
+    background-image: url("../images/menu.svg");
   }
 }/*# sourceMappingURL=main.css.map */
