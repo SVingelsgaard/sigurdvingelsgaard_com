@@ -24,7 +24,7 @@
   justify-content: center;
   background: black;
   z-index: 100;
-  transition: opacity 0.75s, visibility 0.75s;
+  transition: opacity 0.75s ease-in-out;
 }
 .loader .animation {
   width: var(--container-size);
@@ -381,11 +381,6 @@
   }
 }
 
-.loaderHidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .resize-animation-stopper * {
   -webkit-animation: none !important;
           animation: none !important;
@@ -555,7 +550,7 @@ header nav li a:hover {
   margin-bottom: 0;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 800px) {
   .primary-navigation {
     gap: 2em;
     position: fixed;

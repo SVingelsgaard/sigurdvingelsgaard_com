@@ -24,7 +24,7 @@
     justify-content: center;
     background: black;
     z-index: 100;
-    transition: opacity 0.75s, visibility 0.75s;
+    transition: opacity 0.75s ease-in-out;
     .animation
     {
         width: var(--container-size);
@@ -105,10 +105,6 @@
             #{$i * 15 + 25}% { transform-origin: center top; transform: scalex(1.3) scaley(0.7);}
         }
     }   
-}
-.loaderHidden{
-    opacity: 0;
-    visibility: hidden;
 }
 
 .resize-animation-stopper * {
@@ -237,7 +233,6 @@ header {
     background-color: var(--mainColor);
     color:white;
   }
-  
     .footer-basic ul {
         padding:0;
         list-style:none;
@@ -286,7 +281,7 @@ header {
     }
 
 
-@media (max-width: 48em) {
+@media (max-width: 800px) {
 
     .primary-navigation {
 

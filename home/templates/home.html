@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <div class="loader">
+        <div class="loader" id="loader">
             <div class="animation">
                 <div class="📦"></div>
                 <div class="📦"></div>
@@ -35,43 +35,44 @@
 
             <nav>
                 <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
-                    <li><a>Projects</a></li>
-                    <li><a>Electrical</a></li>
-                    <li><a>Mechanical</a></li>
-                    <li><a>Software</a></li>
+                    <li onClick="document.getElementById('projects').scrollIntoView();"><a>Projects</a></li>
+                    <li onClick="document.getElementById('electrical').scrollIntoView();"><a>Electrical</a></li>
+                    <li onClick="document.getElementById('mechanical').scrollIntoView();"><a>Mechanical</a></li>
+                    <li onClick="document.getElementById('software').scrollIntoView();"><a>Software</a></li>
+                    <li onClick="document.getElementById('contact').scrollIntoView();"><a>Contact</a></li>
                 </ul>
             </nav>
         </header>
         <section class="hero fwh">
             <div class="heroTextBox">
-                <h2 class="text">Sigurd Vingelsgaard. testin</h2>
+                <h2 class="text">Sigurd Vingelsgaard.</h2>
             </div>
         </section>
 
-        <section class="projects fwh">
+        <section class="projects fwh" id="projects">
             <div class="textBox">
                 <h2 class="text">Projects</h2>
             </div>
         </section>
 
-        <section class="electrical fwh">
+        <section class="electrical fwh" id="electrical">
             <div class="textBox">
                 <h2 class="text">Electrical</h2>
             </div>
         </section>
 
-        <section class="mechanical fwh">
+        <section class="mechanical fwh" id="mechanical">
             <div class="textBox">
                 <h2 class="text">Mechanical</h2>
             </div>
         </section>
         
-        <section class="software fwh">
+        <section class="software fwh" id="software">
             <div class="textBox">
                 <h2 class="text">Software</h2>
             </div>
         </section>
-        <div class="footer-basic">
+        <div class="footer-basic" id="contact">
             <footer>
                 <div class="social">
                     <a href="https://www.linkedin.com/in/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/linkedin.svg'  %}'></a>
@@ -92,18 +93,14 @@
 
 <script>
     //loading site shit
-    const loader = document.querySelector(".loader");
-    function hide(){
-        window.addEventListener("load", () =>{
-            loader.classList.add("loaderHidden");
-        })
-    }
-       
-    setTimeout(()=>{
-        window.addEventListener("load", () =>{
-            loader.classList.add("loaderHidden");
-        })
-        }, 5000);
+    const loader = document.getElementById("loader");
+
+    function hideLoader(){
+        loader.style.opacity = 0;
+        setTimeout("loader.remove();", 1000);
+        
+        }
+    setTimeout(hideLoader, 1000);//4 is optimal i think
 
     const primaryNav = document.querySelector(".primary-navigation");
     const navToggle = document.querySelector(".mobile-nav-toggle");
