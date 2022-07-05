@@ -7,6 +7,7 @@
 	--container-size: 250px;
 	--box-size: 33px;
 	--box-border-radius: 15%;
+    --navHight: 40px;
 }
 
 * {
@@ -135,7 +136,7 @@ header {
     padding-block: .5em;
     margin: 0;
     width: 100%;
-    height: 40px;
+    height: var(--navHight);
     place-content: space-between;
     z-index: 1;
     background: rgba(0, 0, 0, 0.5) !important;
@@ -182,6 +183,8 @@ header {
     background-image: url("../images/background.jpg");
     background-size: contain;
     z-index: -1;
+    height: 100vh;
+    box-sizing: border-box;
     
     .heroTextBox{
         margin: 0;
@@ -200,11 +203,12 @@ header {
 .fwh{
     height: 100vh;
     box-sizing: border-box;
+    position: relative;
 }
 .textBox{
-    position: relative;
+    position: absolute;
     margin: 0;
-    top: 2em;
+    top: calc(1.3em + var(--navHight) );
     width: 100%;
     text-align: center;
     h2{
@@ -213,12 +217,25 @@ header {
     }
     
 }
+.blur {
+    background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+    backdrop-filter: blur(8px); // This be the blur
+    height: 100%;
+    width: 100%;
+}
 
 .projects{
     background: red;
 }
 .electrical{
-    background: green;
+    .background{
+        background-image: url("../images/electronics/bg.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 .mechanical{
     background-color: orange;
@@ -227,12 +244,11 @@ header {
     background-color: purple;
 }
 
-
 .footer-basic {
     padding:40px 0;
     background-color: var(--mainColor);
     color:white;
-  }
+}
     .footer-basic ul {
         padding:0;
         list-style:none;
