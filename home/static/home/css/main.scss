@@ -12,6 +12,7 @@
 
 * {
     font-family: "new-order";
+    scroll-behavior: smooth;
 }
 
 .loader{
@@ -117,6 +118,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--mainColor);
+    
 }
 
 a {
@@ -158,6 +160,7 @@ header {
     .logo {
         font-family: "ethnocentric" !important;
         font-size: xx-large;
+        cursor: pointer;
     }
     nav {
         padding-right: .5em;
@@ -171,16 +174,13 @@ header {
                 }
             }
         }
-        
-        
     }
-
 }
 
 
 
 .hero {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/hero.jpg");
     background-size: contain;
     z-index: -1;
     height: 100vh;
@@ -195,9 +195,7 @@ header {
         h2{
             color: white;
         }
-        
     }
-    
 }
 
 .fwh{
@@ -205,7 +203,7 @@ header {
     box-sizing: border-box;
     position: relative;
 }
-.textBox{
+.titleBox{
     position: absolute;
     margin: 0;
     top: calc(1.3em + var(--navHight) );
@@ -215,10 +213,10 @@ header {
         margin: 0;
         color: white;
     }
-    
 }
+
 .blur {
-    background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+    background: rgba(0, 0, 0, 0.2); // Make sure this color has an opacity of less than 1
     backdrop-filter: blur(8px); // This be the blur
     height: 100%;
     width: 100%;
@@ -236,14 +234,24 @@ header {
         position: relative;
         height: 100%;
         width: 100%;
-        
+        .textBg{
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 40%;
+        }
     }
-    .textBg{
-        color: black;
+    .textBox{
         position: absolute;
-        height: 25px;
-        width: 25px;
-        z-index: 1000;
+        margin: 0;
+        top: calc(1.3em + var(--navHight) );
+        width: 100%;
+        text-align: center;
+        p{
+            margin: 0;
+            color: white;
+        }
+
     }
 }
 .mechanical{
