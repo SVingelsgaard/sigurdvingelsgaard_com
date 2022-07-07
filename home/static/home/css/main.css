@@ -12,6 +12,7 @@
 
 * {
   font-family: "new-order";
+  scroll-behavior: smooth;
 }
 
 .loader {
@@ -434,6 +435,7 @@ header .logo-parent {
 header .logo {
   font-family: "ethnocentric" !important;
   font-size: xx-large;
+  cursor: pointer;
 }
 header nav {
   padding-right: 0.5em;
@@ -450,7 +452,7 @@ header nav li a:hover {
 }
 
 .hero {
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/hero.jpg");
   background-size: contain;
   z-index: -1;
   height: 100vh;
@@ -473,20 +475,20 @@ header nav li a:hover {
   position: relative;
 }
 
-.textBox {
+.titleBox {
   position: absolute;
   margin: 0;
   top: calc(1.3em + var(--navHight));
   width: 100%;
   text-align: center;
 }
-.textBox h2 {
+.titleBox h2 {
   margin: 0;
   color: white;
 }
 
 .blur {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   height: 100%;
@@ -506,12 +508,22 @@ header nav li a:hover {
   height: 100%;
   width: 100%;
 }
-.electrical .textBg {
-  color: black;
+.electrical .background .textBg {
+  background-color: black;
   position: absolute;
-  height: 25px;
-  width: 25px;
-  z-index: 1000;
+  height: 100%;
+  width: 40%;
+}
+.electrical .textBox {
+  position: absolute;
+  margin: 0;
+  top: calc(1.3em + var(--navHight));
+  width: 100%;
+  text-align: center;
+}
+.electrical .textBox p {
+  margin: 0;
+  color: white;
 }
 
 .mechanical {
