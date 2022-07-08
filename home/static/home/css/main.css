@@ -509,7 +509,7 @@ header nav li a:hover {
   width: 100%;
 }
 .electrical .background .textBg {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   height: 100%;
   width: 40%;
@@ -517,12 +517,11 @@ header nav li a:hover {
 .electrical .textBox {
   position: absolute;
   margin: 0;
-  top: calc(1.3em + var(--navHight));
-  width: 100%;
-  text-align: center;
+  top: 70px;
+  width: 40%;
 }
 .electrical .textBox p {
-  margin: 0;
+  margin: 2em;
   color: white;
 }
 
