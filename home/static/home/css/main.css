@@ -527,7 +527,26 @@ header nav li a:hover {
 }
 
 .mechanical {
-  background-color: orange;
+  background-color: black;
+}
+.mechanical .images {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  float: right;
+  overflow: hidden;
+}
+.mechanical .images .carProfile img {
+  position: absolute;
+  display: inline;
+  width: 100%;
+}
+.mechanical .images .drone img {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  bottom: 0px;
 }
 
 .software {
@@ -607,11 +626,9 @@ header nav li a:hover {
   .primary-navigation a:hover {
     color: rgba(255, 255, 255, 0.5);
   }
-
   .primary-navigation[data-visible=true] {
     transform: translateX(0%);
   }
-
   @supports ((-webkit-backdrop-filter: blur(1em)) or (backdrop-filter: blur(1em))) {
     .primary-navigation {
       background: rgba(0, 0, 0, 0.8) !important;
@@ -634,7 +651,6 @@ header nav li a:hover {
     cursor: pointer;
     z-index: 100;
   }
-
   .mobile-nav-toggle[aria-expanded=true] {
     background-image: url("../images/Exit-menu.svg");
   }

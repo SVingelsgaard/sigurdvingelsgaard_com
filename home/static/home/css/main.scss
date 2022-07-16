@@ -255,7 +255,28 @@ header {
     }
 }
 .mechanical{
-    background-color: orange;
+    background-color: black;
+    .images{
+        position: relative;
+        background-color: white;
+        height: 100%;
+        width: 70%;
+        float: right;
+        overflow: hidden;
+        .carProfile img{
+            position:absolute;
+            display: inline;
+            width: 100%;
+            
+        }
+        .drone img{
+            position:absolute;
+            display: inline;
+            width: 100%;
+            
+            bottom: 0px;
+        }
+    }
 }
 .software{
     background-color: purple;
