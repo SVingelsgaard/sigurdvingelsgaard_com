@@ -144,7 +144,7 @@ header {
     width: 100%;
     height: var(--navHight);
     place-content: space-between;
-    z-index: 1;
+    z-index: 1000000;
     background: rgba(0, 0, 0, 0.5) !important;
     backdrop-filter: blur(.8rem);
 
@@ -212,7 +212,7 @@ header {
     top: calc(1.3em + var(--navHight) );
     width: 100%;
     text-align: center;
-    z-index: 1;
+    z-index: 4;
     h2{
         margin: 0;
         color: white;
@@ -274,17 +274,20 @@ header {
             position: absolute;
             height: 100%;
             width: 40%;
+            z-index: 3;
         }
     }
 
     .images{
         position: absolute;
-        background-color: white;
+        
         height: 100%;
-        width: 70%;
-        float: right;
+        width: 60%;
+        right: 0;
         overflow: hidden;
         z-index: 2;
+        margin: 0;
+
         .carProfile img{
             position:absolute;
             display: inline;
@@ -315,6 +318,7 @@ header {
             position: absolute;
             height: 100%;
             width: 40%;
+            right: 0;
         }
     }
 }
