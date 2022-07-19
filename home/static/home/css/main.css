@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   background: black;
-  z-index: 100;
+  z-index: 10000000000;
   transition: opacity 0.75s ease-in-out;
 }
 .loader .animation {
@@ -403,6 +403,11 @@ ul {
   list-style: none;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -482,6 +487,7 @@ header nav li a:hover {
   top: calc(1.3em + var(--navHight));
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 .titleBox h2 {
   margin: 0;
@@ -514,28 +520,44 @@ header nav li a:hover {
   position: absolute;
   height: 100%;
   width: 40%;
+  right: 0;
 }
 .electrical .textBox {
   position: absolute;
   margin: 0;
   top: 70px;
   width: 40%;
+  right: 0;
 }
 .electrical .textBox p {
   margin: 2em;
   color: white;
 }
 
-.mechanical {
-  background-color: black;
+.mechanical .background {
+  background-image: url("../images/mechanical/bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.mechanical .background .textBg {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  height: 100%;
+  width: 40%;
 }
 .mechanical .images {
-  position: relative;
+  position: absolute;
   background-color: white;
   height: 100%;
   width: 70%;
   float: right;
   overflow: hidden;
+  z-index: 2;
 }
 .mechanical .images .carProfile img {
   position: absolute;
@@ -549,8 +571,21 @@ header nav li a:hover {
   bottom: 0px;
 }
 
-.software {
-  background-color: purple;
+.software .background {
+  background-image: url("../images/software/bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.software .background .textBg {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  height: 100%;
+  width: 40%;
 }
 
 .footer-basic {
