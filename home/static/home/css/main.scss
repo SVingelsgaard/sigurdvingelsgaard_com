@@ -7,7 +7,7 @@
 	--container-size: 250px;
 	--box-size: 33px;
 	--box-border-radius: 15%;
-    --navHight: 40px;
+    --navHight: 56px;
 }
 
 * {
@@ -139,7 +139,7 @@ p {
 
 header {
     position: fixed;
-    padding-block: .5em;
+    //padding-block: .5em;
     margin: 0;
     width: 100%;
     height: var(--navHight);
@@ -167,14 +167,17 @@ header {
         cursor: pointer;
     }
     nav {
-        padding-right: .5em;
-        li {
-            padding-inline: .5em;
-            a {
-                cursor: pointer;
-                padding: 1em;
-                &:hover {
-                    color: rgba(255, 255, 255, 0.5);
+        //padding-right: .5em;
+        .primary-navigation{
+            margin: 20px;
+            li {
+                padding-inline: .2em;
+                a {
+                    cursor: pointer;
+                    padding: 20px;
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.5);
+                    }
                 }
             }
         }
@@ -268,7 +271,7 @@ header {
         position: relative;
         height: 100%;
         width: 100%;
-        z-index: 1;
+        //z-index: 1;
         .textBg{
             background-color: rgba(0, 0, 0, 0.85);
             position: absolute;
@@ -276,7 +279,17 @@ header {
             width: 40%;
         }
     }
-
+    .textBox{
+        position: absolute;
+        margin: 0;
+        top: 70px;
+        width: 40%;
+        left: 0;
+        p{
+            margin: 2em;
+            color: white;
+        }
+    }
     .images{
         position: absolute;
         
@@ -291,18 +304,24 @@ header {
         .carProfile{ 
             height: 50%;
             width: 100%;
-            display: inline;
+            position:absolute;
+            top: 0;
             img{
-                position:absolute;
+                position: absolute;
                 width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
-        .drone img{
-            position:absolute;
-            display: inline;
+        .drone{ 
+            height: 50%;
             width: 100%;
-            
-            
+            position:absolute;
+            bottom: 0;
+            img{
+                width: 100%;
+            }
         }
     }
 }
@@ -322,6 +341,17 @@ header {
             height: 100%;
             width: 40%;
             right: 0;
+        }
+    }
+    .textBox{
+        position: absolute;
+        margin: 0;
+        top: 70px;
+        width: 40%;
+        right: 0;
+        p{
+            margin: 2em;
+            color: white;
         }
     }
 }
@@ -382,8 +412,10 @@ header {
 @media (max-width: 800px) {
 
     .primary-navigation {
+        margin: 0!important;
 
         a {
+            padding: 14px!important;
             color: white;
             &:hover {
                 color: rgba(255, 255, 255, 0.5);
@@ -421,8 +453,10 @@ header {
     }
     .mobile-nav-toggle {
         position: fixed;
-        right: .5em;
-        margin-top: .5em;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 15px;
+        //margin-top: .5em;
         display: block;
         z-index: 3;
         background-image: url('../images/menu.svg');

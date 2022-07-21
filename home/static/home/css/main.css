@@ -7,7 +7,7 @@
   --container-size: 250px;
   --box-size: 33px;
   --box-border-radius: 15%;
-  --navHight: 40px;
+  --navHight: 56px;
 }
 
 * {
@@ -414,7 +414,6 @@ p {
 
 header {
   position: fixed;
-  padding-block: 0.5em;
   margin: 0;
   width: 100%;
   height: var(--navHight);
@@ -442,17 +441,17 @@ header .logo {
   font-size: xx-large;
   cursor: pointer;
 }
-header nav {
-  padding-right: 0.5em;
+header nav .primary-navigation {
+  margin: 20px;
 }
-header nav li {
-  padding-inline: 0.5em;
+header nav .primary-navigation li {
+  padding-inline: 0.2em;
 }
-header nav li a {
+header nav .primary-navigation li a {
   cursor: pointer;
-  padding: 1em;
+  padding: 20px;
 }
-header nav li a:hover {
+header nav .primary-navigation li a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -542,13 +541,23 @@ header nav li a:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  z-index: 1;
 }
 .mechanical .background .textBg {
   background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   height: 100%;
   width: 40%;
+}
+.mechanical .textBox {
+  position: absolute;
+  margin: 0;
+  top: 70px;
+  width: 40%;
+  left: 0;
+}
+.mechanical .textBox p {
+  margin: 2em;
+  color: white;
 }
 .mechanical .images {
   position: absolute;
@@ -563,15 +572,23 @@ header nav li a:hover {
 .mechanical .images .carProfile {
   height: 50%;
   width: 100%;
-  display: inline;
+  position: absolute;
+  top: 0;
 }
 .mechanical .images .carProfile img {
   position: absolute;
   width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mechanical .images .drone {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .mechanical .images .drone img {
-  position: absolute;
-  display: inline;
   width: 100%;
 }
 
@@ -591,6 +608,17 @@ header nav li a:hover {
   height: 100%;
   width: 40%;
   right: 0;
+}
+.software .textBox {
+  position: absolute;
+  margin: 0;
+  top: 70px;
+  width: 40%;
+  right: 0;
+}
+.software .textBox p {
+  margin: 2em;
+  color: white;
 }
 
 .footer-basic {
@@ -648,6 +676,7 @@ header nav li a:hover {
 
 @media (max-width: 800px) {
   .primary-navigation {
+    margin: 0 !important;
     gap: 2em;
     position: fixed;
     z-index: 2;
@@ -661,6 +690,7 @@ header nav li a:hover {
     transition: transform 300ms ease-out;
   }
   .primary-navigation a {
+    padding: 14px !important;
     color: white;
   }
   .primary-navigation a:hover {
@@ -678,8 +708,9 @@ header nav li a:hover {
   }
   .mobile-nav-toggle {
     position: fixed;
-    right: 0.5em;
-    margin-top: 0.5em;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
     display: block;
     z-index: 3;
     background-image: url("../images/menu.svg");
