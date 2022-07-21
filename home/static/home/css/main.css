@@ -539,7 +539,7 @@ header nav li a:hover {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -549,20 +549,24 @@ header nav li a:hover {
   position: absolute;
   height: 100%;
   width: 40%;
-  z-index: 3;
 }
 .mechanical .images {
   position: absolute;
-  height: 100%;
+  height: calc(100% - (1.3em + var(--navHight) + 24px));
   width: 60%;
   right: 0;
+  bottom: 0;
   overflow: hidden;
   z-index: 2;
   margin: 0;
 }
+.mechanical .images .carProfile {
+  height: 50%;
+  width: 100%;
+  display: inline;
+}
 .mechanical .images .carProfile img {
   position: absolute;
-  display: inline;
   width: 100%;
 }
 .mechanical .images .drone img {
