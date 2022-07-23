@@ -462,6 +462,7 @@ header nav .primary-navigation li a:hover {
   z-index: -1;
   height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 .hero .heroTextBox {
   margin: 0;
@@ -474,16 +475,10 @@ header nav .primary-navigation li a:hover {
   color: white;
 }
 
-.fwh {
-  height: 100vh;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .titleBox {
   position: absolute;
   margin: 0;
-  top: calc(1.3em + var(--navHight));
+  top: calc(0.5em + var(--navHight));
   width: 100%;
   text-align: center;
   z-index: 4;
@@ -491,6 +486,7 @@ header nav .primary-navigation li a:hover {
 .titleBox h2 {
   margin: 0;
   color: white;
+  font-size: xx-large;
 }
 
 .blur {
@@ -502,9 +498,17 @@ header nav .primary-navigation li a:hover {
 }
 
 .projects {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
   background: red;
 }
 
+.electrical {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
 .electrical .background {
   background-image: url("../images/electronics/bg.jpg");
   background-position: bottom;
@@ -533,6 +537,11 @@ header nav .primary-navigation li a:hover {
   color: white;
 }
 
+.mechanical {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
 .mechanical .background {
   background-image: url("../images/mechanical/bg.jpg");
   background-position: bottom;
@@ -558,10 +567,11 @@ header nav .primary-navigation li a:hover {
 .mechanical .textBox p {
   margin: 2em;
   color: white;
+  font-size: large;
 }
 .mechanical .images {
   position: absolute;
-  height: calc(100% - (1.3em + var(--navHight) + 24px));
+  height: calc(100% - (1em + var(--navHight) + 24px));
   width: 60%;
   right: 0;
   bottom: 0;
@@ -570,28 +580,37 @@ header nav .primary-navigation li a:hover {
   margin: 0;
 }
 .mechanical .images .carProfile {
-  height: 50%;
+  height: 30%;
   width: 100%;
   position: absolute;
   top: 0;
 }
 .mechanical .images .carProfile img {
   position: absolute;
-  width: 100%;
+  width: min(100%, 1142px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .mechanical .images .drone {
-  height: 50%;
+  height: 70%;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 .mechanical .images .drone img {
-  width: 100%;
+  position: absolute;
+  width: min(100%, 1142px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.software {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
 .software .background {
   background-image: url("../images/software/bg.jpg");
   background-position: bottom;

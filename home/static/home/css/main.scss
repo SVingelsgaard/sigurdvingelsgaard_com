@@ -191,7 +191,7 @@ header {
     z-index: -1;
     height: 100vh;
     box-sizing: border-box;
-    
+    position: relative;
     .heroTextBox{
         margin: 0;
         position: absolute;
@@ -204,21 +204,17 @@ header {
     }
 }
 
-.fwh{
-    height: 100vh;
-    box-sizing: border-box;
-    position: relative;
-}
 .titleBox{
     position: absolute;
     margin: 0;
-    top: calc(1.3em + var(--navHight) );
+    top: calc(.5em + var(--navHight) );
     width: 100%;
     text-align: center;
     z-index: 4;
     h2{
         margin: 0;
         color: white;
+        font-size: xx-large;
     }
 }
 
@@ -231,9 +227,15 @@ header {
 }
 
 .projects{
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
     background: red;
 }
 .electrical{
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
     .background{
         background-image: url("../images/electronics/bg.jpg");
         background-position: bottom;
@@ -263,6 +265,9 @@ header {
     }
 }
 .mechanical{
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
     .background{
         background-image: url("../images/mechanical/bg.jpg");
         background-position: bottom;
@@ -288,12 +293,13 @@ header {
         p{
             margin: 2em;
             color: white;
+            font-size: large;
         }
     }
     .images{
         position: absolute;
         
-        height: calc(100% - (1.3em + var(--navHight) + 24px));
+        height: calc(100% - (1em + var(--navHight) + 24px));
         width: 60%;
         right: 0;
         bottom: 0;
@@ -302,30 +308,37 @@ header {
         margin: 0;
 
         .carProfile{ 
-            height: 50%;
+            height: 30%;
             width: 100%;
             position:absolute;
             top: 0;
             img{
                 position: absolute;
-                width: 100%;
+                width: min(100%, 1142px);
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
         }
         .drone{ 
-            height: 50%;
+            height: 70%;
             width: 100%;
             position:absolute;
             bottom: 0;
             img{
-                width: 100%;
+                position: absolute;
+                width: min(100%, 1142px);   
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
     }
 }
 .software{
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
     .background{
         background-image: url("../images/software/bg.jpg");
         background-position: bottom;
