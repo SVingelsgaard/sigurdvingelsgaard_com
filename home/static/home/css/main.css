@@ -639,6 +639,9 @@ header nav .primary-navigation li a:hover {
   margin: 2em;
   color: white;
 }
+.software .textBox p a {
+  color: blue;
+}
 
 .footer-basic {
   padding: 40px 0;

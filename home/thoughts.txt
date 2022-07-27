@@ -13,3 +13,11 @@ sånne piler som bølge nedover på bottn.
 bildet i bagrunnen scrolle litt tregar en pagen.
 
 prodjects ha sånn linje for hver enkelt prodject maby idfk. prolly dudu..
+
+
+ele:
+ta med sbilde av drone circuitboard frå eagle(når det æ lagd)
+
+cs:
+bilde av number NN
+bilde av pendel simulation(video med pid kansje)
