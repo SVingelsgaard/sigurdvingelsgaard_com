@@ -118,7 +118,6 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--mainColor);
-    
 }
 
 a {
@@ -296,7 +295,7 @@ header {
             font-size: large;
         }
     }
-    .images{
+    .media{
         position: absolute;
         
         height: calc(100% - (1em + var(--navHight) + 24px));
@@ -354,6 +353,7 @@ header {
             height: 100%;
             width: 40%;
             right: 0;
+            
         }
     }
     .textBox{
@@ -362,11 +362,51 @@ header {
         top: 70px;
         width: 40%;
         right: 0;
+        font-size: large;
         p{
             margin: 2em;
             color: white;
             a{
                 color: blue;
+                text-decoration: underline;
+            }
+        }
+    }
+    .media{
+        position: absolute;
+        
+        height: calc(100% - (1em + var(--navHight) + 24px));
+        width: 60%;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: 2;
+        margin: 0;
+
+        .pendulum{ 
+            height: 50%;
+            width: 100%;
+            position:absolute;
+            top: 0;
+            video{
+                position: absolute;
+                width: 55%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .numrec{ 
+            height: 70%;
+            width: 100%;
+            position:absolute;
+            bottom: 0;
+            img{
+                position: absolute;
+                width: min(100%, 1142px);   
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
     }

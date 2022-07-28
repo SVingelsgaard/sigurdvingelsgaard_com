@@ -569,7 +569,7 @@ header nav .primary-navigation li a:hover {
   color: white;
   font-size: large;
 }
-.mechanical .images {
+.mechanical .media {
   position: absolute;
   height: calc(100% - (1em + var(--navHight) + 24px));
   width: 60%;
@@ -579,26 +579,26 @@ header nav .primary-navigation li a:hover {
   z-index: 2;
   margin: 0;
 }
-.mechanical .images .carProfile {
+.mechanical .media .carProfile {
   height: 30%;
   width: 100%;
   position: absolute;
   top: 0;
 }
-.mechanical .images .carProfile img {
+.mechanical .media .carProfile img {
   position: absolute;
   width: min(100%, 1142px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.mechanical .images .drone {
+.mechanical .media .drone {
   height: 70%;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-.mechanical .images .drone img {
+.mechanical .media .drone img {
   position: absolute;
   width: min(100%, 1142px);
   top: 50%;
@@ -634,6 +634,7 @@ header nav .primary-navigation li a:hover {
   top: 70px;
   width: 40%;
   right: 0;
+  font-size: large;
 }
 .software .textBox p {
   margin: 2em;
@@ -641,6 +642,43 @@ header nav .primary-navigation li a:hover {
 }
 .software .textBox p a {
   color: blue;
+  text-decoration: underline;
+}
+.software .media {
+  position: absolute;
+  height: calc(100% - (1em + var(--navHight) + 24px));
+  width: 60%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0;
+}
+.software .media .pendulum {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.software .media .pendulum video {
+  position: absolute;
+  width: 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.software .media .numrec {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.software .media .numrec img {
+  position: absolute;
+  width: min(100%, 1142px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-basic {
