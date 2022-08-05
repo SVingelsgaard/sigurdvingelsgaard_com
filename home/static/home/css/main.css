@@ -532,7 +532,29 @@ header nav .primary-navigation li a:hover {
   height: 100vh;
   box-sizing: border-box;
   position: relative;
-  background: red;
+}
+.projects .background {
+  background-image: url("../images/projects/bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.projects .background .textBg {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: calc(2.5em + var(--navHight));
+}
+.projects .background .textBg2 {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: 50%;
 }
 
 .electrical {
