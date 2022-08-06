@@ -406,6 +406,7 @@ ul {
 p {
   padding: 0;
   margin: 0;
+  line-height: 2em;
 }
 
 .flex {
@@ -692,6 +693,7 @@ header nav .primary-navigation li a:hover {
 .software .textBox p {
   margin: 2em;
   color: white;
+  line-height: 2em;
 }
 .software .textBox p a {
   color: blue;
@@ -715,7 +717,7 @@ header nav .primary-navigation li a:hover {
 }
 .software .media .pendulum video {
   position: absolute;
-  width: calc(100% - 4em);
+  width: min(100% - 4em, 1200px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -728,7 +730,7 @@ header nav .primary-navigation li a:hover {
 }
 .software .media .numrec video {
   position: absolute;
-  width: calc(100% - 3em);
+  width: min(100% - 3em, 460px);
   top: 2em;
   left: 2em;
 }
@@ -741,7 +743,7 @@ header nav .primary-navigation li a:hover {
 }
 .software .media .drawing video {
   position: absolute;
-  width: calc(100% - 3em);
+  width: min(100% - 3em, 713px);
   top: 2em;
   right: 2em;
 }
