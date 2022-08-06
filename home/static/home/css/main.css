@@ -591,7 +591,7 @@ header nav .primary-navigation li a:hover {
 }
 
 .mechanical {
-  height: 100vh;
+  height: 1000px;
   box-sizing: border-box;
   position: relative;
 }
@@ -660,7 +660,7 @@ header nav .primary-navigation li a:hover {
 }
 
 .software {
-  height: 100vh;
+  height: 1000px;
   box-sizing: border-box;
   position: relative;
 }
@@ -708,30 +708,42 @@ header nav .primary-navigation li a:hover {
   margin: 0;
 }
 .software .media .pendulum {
-  height: 50%;
+  height: 56%;
   width: 100%;
   position: absolute;
   top: 0;
 }
 .software .media .pendulum video {
   position: absolute;
-  width: 55%;
+  width: calc(100% - 4em);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .software .media .numrec {
-  height: 70%;
-  width: 100%;
+  height: 44%;
+  width: 40%;
   position: absolute;
   bottom: 0;
 }
-.software .media .numrec img {
+.software .media .numrec video {
   position: absolute;
-  width: min(100%, 1142px);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: calc(100% - 3em);
+  top: 2em;
+  left: 2em;
+}
+.software .media .drawing {
+  height: 44%;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.software .media .drawing video {
+  position: absolute;
+  width: calc(100% - 3em);
+  top: 2em;
+  right: 2em;
 }
 
 .footer-basic {

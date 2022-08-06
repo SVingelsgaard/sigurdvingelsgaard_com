@@ -319,7 +319,7 @@ header {
     }
 }
 .mechanical{
-    height: 100vh;
+    height: 1000px;
     box-sizing: border-box;
     position: relative;
     .background{
@@ -390,7 +390,7 @@ header {
     }
 }
 .software{
-    height: 100vh;
+    height: 1000px;
     box-sizing: border-box;
     position: relative;
     .background{
@@ -439,29 +439,41 @@ header {
         margin: 0;
 
         .pendulum{ 
-            height: 50%;
+            height: 56%;
             width: 100%;
             position:absolute;
             top: 0;
             video{
                 position: absolute;
-                width: 55%;
+                width: calc(100% - 4em);
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
         }
         .numrec{ 
-            height: 70%;
-            width: 100%;
+            height: 44%;
+            width: 40%;
             position:absolute;
             bottom: 0;
-            img{
+            video{//1.18
                 position: absolute;
-                width: min(100%, 1142px);   
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                width: calc(100% - 3em);
+                top: 2em;
+                left: 2em;
+            }
+        }
+        .drawing{ //1.77
+            height: 44%;
+            width: 60%;
+            position:absolute;
+            bottom: 0;
+            right: 0;
+            video{
+                position: absolute;
+                width: calc(100% - 3em);
+                top: 2em;
+                right: 2em;
             }
         }
     }

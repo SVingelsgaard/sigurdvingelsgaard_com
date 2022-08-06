@@ -112,7 +112,7 @@
         </section>
         
 
-        
+    
         <section class="software" id="software">
             <div class="background">
                 <div class="textBg"></div>
@@ -121,13 +121,14 @@
                 <h2>Software</h2>
             </div>
             <div class="media">
-                <div class="pendulum"><video controls autoplay src="{%  static  'home/images/software/pendelum.mov'  %}"></video></div>
-                <!--<div class="numrec"><img src="{%  static  'home/images/mechanical/drone.jpg'  %}"></div>!-->
+                <div class="pendulum"><video controls src="{%  static  'home/images/software/pendelum.mov'  %}"></video></div>
+                <div class="numrec"><video controls src="{%  static  'home/images/software/numrec.mov'  %}"></video></div>
+                <div class="drawing"><video controls src="{%  static  'home/images/software/drawing.mov'  %}"></video></div>
             </div>
             <div class="textBox">
                 <p>
                     Simulation of a pendulum with a horisontaly movable pivot-point. A pid clontroller balances the pendulum upright. The simulation is built using the <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener noreferrer">KIVY</a> framework<br><br><br>
-                    The handwitten number recognicer uses a nural network build in Tensorflow that is trained with <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">MNIST</a>, a database of handwritten digits.<br><br><br>
+                    The handwitten number recognicer uses a nural network built in Tensorflow that is trained with <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">MNIST</a>, a database of handwritten digits. The bar chart in the video shows the output of the networks last layer, aka which of the 10 different numbers it "thinks" the drawn number is.<br><br><br>
                     
                 </p>
             </div>
