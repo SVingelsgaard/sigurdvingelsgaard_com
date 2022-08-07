@@ -68,9 +68,6 @@
 
 
         <section class="electrical" id="electrical">
-            <div class="comingSoon">
-                <div class="comingSoonBg"><h1>Coming soon...</h1></div>
-            </div>
             <div class="background">
                 <div class="textBg"></div>
                 <div class="blur"></div>
@@ -78,11 +75,18 @@
             <div class="titleBox">
                 <h2>Electrical</h2>
             </div>
+            <div class="media">
+                <div class="circuit"><img src="{%  static  'home/images/electronics/circuit.png'  %}"></div>
+                <div class="soldering"><img src="{%  static  'home/images/electronics/soldering.png'  %}"></div>
+                <div class="spider"><img src="{%  static  'home/images/electronics/spider.png'  %}"></div>
+                <div class="drone"><img src="{%  static  'home/images/electronics/drone.png'  %}"></div>
+            </div>
             <div class="textBox">
                 <p>Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Tristique senectus et netus et. 
                     Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. 
                     Tincidunt dui ut ornare lectus sit amet est placerat. Ullamcorper eget nulla facilisi etiam dignissim. Sed libero enim sed faucibus turpis.</p>
             </div>
+            
         </section>
 
 
@@ -96,16 +100,15 @@
                 <h2>Mechanical</h2>
             </div>
             <div class="media">
-                <!--<div class="car"><img src="{%  static  'home/images/mechanical/car1.jpg'  %}"></div>-->
-                <div class="carProfile"><img src="{%  static  'home/images/mechanical/car2.jpg'  %}"></div>
-                <div class="drone"><img src="{%  static  'home/images/mechanical/drone.jpg'  %}"></div>
+                <div class="carProfile"><img src="{%  static  'home/images/mechanical/car2.png'  %}"></div>
+                <div class="drone"><img src="{%  static  'home/images/mechanical/drone.png'  %}"></div>
             </div>
             <div class="textBox">
                 <p>
                     All CAD is created in fusion 360. <br><br><br>
                     3D-prints are printed on my Creality Ender-3 <br><br><br>
                     Car is just a bodywork of an imaginary car created with t-splines in F360. <br><br><br>
-                    Drone is 3d printed and is design to fit the drones hardware. Battery, curcit, motordrives etc. <br><br><br>
+                    Drone is 3d printed and is desiged to fit the drones hardware. Battery, controlcurcit, motordrives etc. <br><br><br>
                     <i>comming soon: car CFD analysis</i>
                 </p>
             </div>
@@ -173,7 +176,10 @@
         setTimeout("loader.remove();", 1000);
         
         }
-    setTimeout(hideLoader, 1000);//4 is optimal i think
+    setTimeout(hideLoader, 100);//4 is optimal i think
+    
+    el.scrollIntoView(true);
+    window.scrollBy(0, -10); // Adjust scrolling with a negative value here
 
     const primaryNav = document.querySelector(".primary-navigation");
     const navToggle = document.querySelector(".mobile-nav-toggle");

@@ -530,7 +530,7 @@ header nav .primary-navigation li a:hover {
 }
 
 .projects {
-  height: 100vh;
+  height: max(1000px, 100vh);
   box-sizing: border-box;
   position: relative;
 }
@@ -559,7 +559,7 @@ header nav .primary-navigation li a:hover {
 }
 
 .electrical {
-  height: 100vh;
+  height: max(1000px, 100vh);
   box-sizing: border-box;
   position: relative;
 }
@@ -582,7 +582,7 @@ header nav .primary-navigation li a:hover {
 .electrical .textBox {
   position: absolute;
   margin: 0;
-  top: 70px;
+  top: 102px;
   width: 40%;
   right: 0;
 }
@@ -590,9 +590,74 @@ header nav .primary-navigation li a:hover {
   margin: 2em;
   color: white;
 }
+.electrical .media {
+  position: absolute;
+  height: calc(100% - (1em + var(--navHight) + 24px));
+  width: 60%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0;
+}
+.electrical .media .circuit {
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.electrical .media .circuit img {
+  position: absolute;
+  width: min(90%, 1024px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.electrical .media .soldering {
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.electrical .media .soldering img {
+  position: absolute;
+  width: min(50%, 285px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.electrical .media .spider {
+  height: 60%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.electrical .media .spider img {
+  position: absolute;
+  width: min(90%, 5700px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.electrical .media .drone {
+  height: 60%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.electrical .media .drone img {
+  position: absolute;
+  width: min(80%, 5700px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .mechanical {
-  height: 1000px;
+  height: max(1000px, 100vh);
   box-sizing: border-box;
   position: relative;
 }
@@ -614,7 +679,7 @@ header nav .primary-navigation li a:hover {
 .mechanical .textBox {
   position: absolute;
   margin: 0;
-  top: 70px;
+  top: 102px;
   width: 40%;
   left: 0;
 }
@@ -641,7 +706,7 @@ header nav .primary-navigation li a:hover {
 }
 .mechanical .media .carProfile img {
   position: absolute;
-  width: min(100%, 1142px);
+  width: min(90%, 1024px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -654,14 +719,14 @@ header nav .primary-navigation li a:hover {
 }
 .mechanical .media .drone img {
   position: absolute;
-  width: min(100%, 1142px);
+  width: min(90%, 1024px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .software {
-  height: 1000px;
+  height: max(1072px, 100vh);
   box-sizing: border-box;
   position: relative;
 }
@@ -685,7 +750,7 @@ header nav .primary-navigation li a:hover {
 .software .textBox {
   position: absolute;
   margin: 0;
-  top: 70px;
+  top: 102px;
   width: 40%;
   right: 0;
   font-size: large;
@@ -701,7 +766,7 @@ header nav .primary-navigation li a:hover {
 }
 .software .media {
   position: absolute;
-  height: calc(100% - (1em + var(--navHight) + 24px));
+  height: calc(100% - 102px - 2em);
   width: 60%;
   left: 0;
   bottom: 0;
@@ -718,13 +783,13 @@ header nav .primary-navigation li a:hover {
 .software .media .pendulum video {
   position: absolute;
   width: min(100% - 4em, 1200px);
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 .software .media .numrec {
   height: 44%;
-  width: 40%;
+  width: 41%;
   position: absolute;
   bottom: 0;
 }
@@ -736,7 +801,7 @@ header nav .primary-navigation li a:hover {
 }
 .software .media .drawing {
   height: 44%;
-  width: 60%;
+  width: 59%;
   position: absolute;
   bottom: 0;
   right: 0;
