@@ -15,10 +15,19 @@
     </head>
 
     <body>
-        <div class="loader"></div>
+        <div class="loader" id="loader">
+            <div class="animation">
+                <div class="📦"></div>
+                <div class="📦"></div>
+                <div class="📦"></div>
+                <div class="📦"></div>
+                <div class="📦"></div>
+            </div>
+        </div>
         <header class="navbar flex">
-            <div class="logo-parent">
-                <a href="" class="logo">SIGURD</a>
+            <div class="logo-parent" onClick="document.getElementById('hero').scrollIntoView();">
+                <!--<a class="logo">SIGURD</a>!-->
+                <img src='{%  static  'home/images/logo.png'  %}'>
             </div>
 
             <div class="mobile-nav-toggle-parent">
@@ -27,43 +36,135 @@
 
             <nav>
                 <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
-                    <li><a>Prodjects</a></li>
-                    <li><a>Electrical</a></li>
-                    <li><a>Mechanical</a></li>
-                    <li><a>Software</a></li>
+                    <li onClick="document.getElementById('projects').scrollIntoView();"><a>Projects</a></li>
+                    <li onClick="document.getElementById('electrical').scrollIntoView();"><a>Electrical</a></li>
+                    <li onClick="document.getElementById('mechanical').scrollIntoView();"><a>Mechanical</a></li>
+                    <li onClick="document.getElementById('software').scrollIntoView();"><a>Software</a></li>
+                    <li onClick="document.getElementById('contact').scrollIntoView();"><a>Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="hero fwh">
+        <section class="hero" id="hero">
             <div class="heroTextBox">
                 <h2 class="text">Sigurd Vingelsgaard.</h2>
+                <p> robotics. ish</p>
+            </div>
+            <div class="pb"><img src='{%  static  'home/images/PB.png'  %}'></div>
+        </section>
+
+
+
+        <section class="projects" id="projects">
+            <div class="comingSoon">
+                <div class="comingSoonBg"><h1>Coming soon...</h1></div>
+            </div>
+            <div class="background">
+                <div class="textBg"></div>
+                <div class="textBg2"></div>
+                <div class="blur"></div>
+            <div class="titleBox">
+                <h2>Projects</h2>
             </div>
         </section>
 
-        <section class="projects fwh">
-            <div class="textBox">
-                <h2 class="text">Projects</h2>
+
+
+        <section class="electrical" id="electrical">
+            <div class="background">
+                <div class="textBg"></div>
+                <div class="blur"></div>
             </div>
+            <div class="titleBox">
+                <h2>Electrical</h2>
+            </div>
+            <div class="media">
+                <div class="circuit"><img src="{%  static  'home/images/electronics/circuit.png'  %}"></div>
+                <!--<div class="soldering"><img src="{%  static  'home/images/electronics/soldering.png'  %}"></div>!-->
+                <div class="spider"><img src="{%  static  'home/images/electronics/spider.png'  %}"></div>
+                <div class="drone"><img src="{%  static  'home/images/electronics/drone.png'  %}"></div>
+            </div>
+            <div class="textBox">
+                <p>
+                    The "Motordriver V1" is designed using
+                    <a href="https://www.autodesk.com/products/eagle/free-download" target="_blank" rel="noopener noreferrer">Eagle</a>
+                    and is a part of a bigger circuit uset to control a dc motor.<br><br><br>
+
+                    The "spider" is controled with 12 servo motors from a Arduino nano.<br><br><br>
+
+                    The drone is controlled with a Arduino nano and also has a gyroscope and accelerometer. 
+                    The battery is underneath the circuit and supplies the ESCs.<br><br><br>
+
+                </p>
+            </div>
+            
         </section>
 
-        <section class="electrical fwh">
-            <div class="textBox">
-                <h2 class="text">Electrical</h2>
-            </div>
-        </section>
 
-        <section class="mechanical fwh">
+
+        <section class="mechanical" id="mechanical">
+            <div class="background">
+                <div class="textBg"></div>
+                <div class="blur"></div>
+            </div>
+            <div class="titleBox">
+                <h2>Mechanical</h2>
+            </div>
+            <div class="media">
+                <div class="carProfile"><img src="{%  static  'home/images/mechanical/car2.png'  %}"></div>
+                <div class="drone"><img src="{%  static  'home/images/mechanical/drone.png'  %}"></div>
+            </div>
             <div class="textBox">
-                <h2 class="text">Mechanical</h2>
+                <p>
+                    All CAD is created in
+                    <a href="https://www.autodesk.com/products/fusion-360/personal" target="_blank" rel="noopener noreferrer">Fusion 360</a>.<br><br><br>
+
+                    3D-prints are printed on my Creality Ender-3 <br><br><br>
+                    
+                    Car is just a bodywork of an imaginary car created with t-splines in F360. <br><br><br>
+                    
+                    Drone is 3d printed and is desiged to fit the drones hardware. Battery, controlcurcit, motordrives etc. <br><br><br>
+                    <i>comming soon: car CFD analysis</i>
+                </p>
             </div>
         </section>
         
-        <section class="software fwh">
+
+    
+        <section class="software" id="software">
+            <div class="background">
+                <div class="textBg"></div>
+                <div class="blur"></div>
+            <div class="titleBox">
+                <h2>Software</h2>
+            </div>
+            <div class="media">
+                <div class="pendulum"><video controls src="{%  static  'home/images/software/pendelum.mov'  %}"></video></div>
+                <div class="numrec"><video controls src="{%  static  'home/images/software/numrec.mov'  %}"></video></div>
+                <div class="drawing"><video controls src="{%  static  'home/images/software/drawing.mov'  %}"></video></div>
+            </div>
             <div class="textBox">
-                <h2 class="text">Software</h2>
+                <p>
+                    Simulation of a pendulum with a horisontaly movable pivot-point. A pid clontroller balances 
+                    the pendulum upright. The simulation is built using the 
+                    <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">KIVY</a> 
+                    framework<br><br><br>
+
+                    The handwitten number recognicer uses a nural network built in Tensorflow that is trained with 
+                    <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener noreferrer">MNIST</a>, a database of 
+                    handwritten digits. The bar chart in the video shows the output of the networks last layer, 
+                    aka which of the 10 different numbers it "thinks" the drawn number is. The numbers and the bar chart is presented using the
+                    <a href="https://matplotlib.org/" target="_blank" rel="noopener noreferrer">Matplotlib</a>
+                    liberary.<br><br><br>
+
+                    The "drawing arm/leg" is a two-jointed "robot" that can drive both its jonints to move the tip any 
+                    reachable point. Its using inverse kinematics to draw out a graph. In this case it is a circle. 
+                    The simulation is built using the 
+                    <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">KIVY</a> 
+                    framework.<br><br><br>
+                </p>
             </div>
         </section>
-        <div class="footer-basic">
+        <div class="footer-basic" id="contact">
             <footer>
                 <div class="social">
                     <a href="https://www.linkedin.com/in/sigurdvingelsgaard/" target="_blank" rel="noopener noreferrer"><img src='{%  static  'home/images/linkedin.svg'  %}'></a>
@@ -76,7 +177,7 @@
                     <li class="list-inline-item ">Mail: sigurd@vingelsgaard.no</li>
                     <li class="list-inline-item">Tlf.: +47 95 96 50 77</li>
                 </ul>
-                <p class="copyright">Sigurd Vingelsgaard - 2022</p>
+                <p class="copyright">Sigurd Vingelsgaard – 2022</p>
             </footer>
         </div>
     </body>
@@ -84,10 +185,17 @@
 
 <script>
     //loading site shit
-    const loader = document.querySelector(".loader");
-    window.addEventListener("load", () =>{
-        loader.classList.add("loaderHidden");
-    })
+    const loader = document.getElementById("loader");
+
+    function hideLoader(){
+        loader.style.opacity = 0;
+        setTimeout("loader.remove();", 1000);
+        
+        }
+    setTimeout(hideLoader, 4000);//4 is optimal i think
+    
+    el.scrollIntoView(true);
+    window.scrollBy(0, -10); // Adjust scrolling with a negative value here
 
     const primaryNav = document.querySelector(".primary-navigation");
     const navToggle = document.querySelector(".mobile-nav-toggle");
