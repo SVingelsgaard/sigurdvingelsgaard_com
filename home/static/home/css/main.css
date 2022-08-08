@@ -623,7 +623,7 @@ header nav .primary-navigation li a:hover {
 }
 .electrical .media .circuit img {
   position: absolute;
-  width: 60%;
+  width: min(60%, 600px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -650,7 +650,7 @@ header nav .primary-navigation li a:hover {
 }
 .electrical .media .spider img {
   position: absolute;
-  width: min(94%, 5700px);
+  width: min(94%, 471px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -664,7 +664,7 @@ header nav .primary-navigation li a:hover {
 }
 .electrical .media .drone img {
   position: absolute;
-  width: min(85%, 5700px);
+  width: min(85%, 426px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

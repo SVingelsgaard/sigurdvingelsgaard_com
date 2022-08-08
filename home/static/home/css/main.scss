@@ -351,7 +351,7 @@ header {
             right: 0;
             img{
                 position: absolute;
-                width: min(60%);
+                width: min(60%, 600px);
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -378,7 +378,7 @@ header {
             bottom: 0;
             img{
                 position: absolute;
-                width: min(94%, 5700px);  
+                width: min(94%, 471px);  
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -392,7 +392,7 @@ header {
             right: 0;
             img{
                 position: absolute;
-                width: min(85%, 5700px);  
+                width: min(85%, 426px);  
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
