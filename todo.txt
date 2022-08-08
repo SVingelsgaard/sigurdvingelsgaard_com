@@ -1,0 +1,10 @@
+PRIORITY
+
+hero pic
+
+electronics text
+
+
+NON PRIORITY
+hero pic scrolle saktar
+scrollbar mer fancy

@@ -77,7 +77,7 @@
             </div>
             <div class="media">
                 <div class="circuit"><img src="{%  static  'home/images/electronics/circuit.png'  %}"></div>
-                <div class="soldering"><img src="{%  static  'home/images/electronics/soldering.png'  %}"></div>
+                <!--<div class="soldering"><img src="{%  static  'home/images/electronics/soldering.png'  %}"></div>!-->
                 <div class="spider"><img src="{%  static  'home/images/electronics/spider.png'  %}"></div>
                 <div class="drone"><img src="{%  static  'home/images/electronics/drone.png'  %}"></div>
             </div>
@@ -105,9 +105,13 @@
             </div>
             <div class="textBox">
                 <p>
-                    All CAD is created in fusion 360. <br><br><br>
+                    All CAD is created in
+                    <a href="https://www.autodesk.com/products/fusion-360/personal" target="_blank" rel="noopener noreferrer">Fusion 360</a>.<br><br><br>
+
                     3D-prints are printed on my Creality Ender-3 <br><br><br>
+                    
                     Car is just a bodywork of an imaginary car created with t-splines in F360. <br><br><br>
+                    
                     Drone is 3d printed and is desiged to fit the drones hardware. Battery, controlcurcit, motordrives etc. <br><br><br>
                     <i>comming soon: car CFD analysis</i>
                 </p>
@@ -132,19 +136,21 @@
                 <p>
                     Simulation of a pendulum with a horisontaly movable pivot-point. A pid clontroller balances 
                     the pendulum upright. The simulation is built using the 
-                    <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener noreferrer">KIVY</a> 
+                    <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">KIVY</a> 
                     framework<br><br><br>
 
                     The handwitten number recognicer uses a nural network built in Tensorflow that is trained with 
-                    <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">MNIST</a>, a database of 
+                    <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener noreferrer">MNIST</a>, a database of 
                     handwritten digits. The bar chart in the video shows the output of the networks last layer, 
-                    aka which of the 10 different numbers it "thinks" the drawn number is.<br><br><br>
+                    aka which of the 10 different numbers it "thinks" the drawn number is. The numbers and the bar chart is presented using the
+                    <a href="https://matplotlib.org/" target="_blank" rel="noopener noreferrer">Matplotlib</a>
+                    liberary.<br><br><br>
 
                     The "drawing arm/leg" is a two-jointed "robot" that can drive both its jonints to move the tip any 
-                    reachable point. Its uding inverse kinematics to draw out a graph. In this case it is a circle. 
+                    reachable point. Its using inverse kinematics to draw out a graph. In this case it is a circle. 
                     The simulation is built using the 
-                    <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener noreferrer">KIVY</a> 
-                    framework<br><br><br>
+                    <a href="https://kivy.org/#home" target="_blank" rel="noopener noreferrer">KIVY</a> 
+                    framework.<br><br><br>
                 </p>
             </div>
         </section>
