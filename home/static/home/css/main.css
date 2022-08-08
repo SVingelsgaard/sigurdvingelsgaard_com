@@ -457,9 +457,6 @@ header nav .primary-navigation li a:hover {
 }
 
 .hero {
-  background-image: url("../images/hero.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
   z-index: -1;
   height: 100vh;
   box-sizing: border-box;
@@ -474,6 +471,23 @@ header nav .primary-navigation li a:hover {
 }
 .hero .heroTextBox h2 {
   color: white;
+}
+.hero .heroTextBox p {
+  color: white;
+}
+.hero .pb {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero .pb img {
+  position: absolute;
+  width: 600px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .titleBox {

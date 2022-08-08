@@ -185,9 +185,6 @@ header {
 }
 
 .hero {
-    background-image: url("../images/hero.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
     z-index: -1;
     height: 100vh;
     box-sizing: border-box;
@@ -200,6 +197,23 @@ header {
         cursor: default;
         h2{
             color: white;
+        }
+        p{
+            color: #ffff;
+        }
+    }
+    .pb{
+        height: 100%;
+        width: 100%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        img{
+            position: absolute;
+            width: 600px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
     }
 }
