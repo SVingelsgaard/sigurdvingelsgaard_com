@@ -160,6 +160,10 @@ header {
         align-items: center;
         vertical-align: center;
         padding-inline-start: .75em;
+        cursor: pointer;
+        img{
+            left: 0;
+        }
     }
     .logo {
         font-family: "ethnocentric" !important;

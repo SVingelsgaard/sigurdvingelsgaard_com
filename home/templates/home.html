@@ -26,7 +26,8 @@
         </div>
         <header class="navbar flex">
             <div class="logo-parent" onClick="document.getElementById('hero').scrollIntoView();">
-                <a class="logo">SIGURD</a>
+                <!--<a class="logo">SIGURD</a>!-->
+                <img src="{%  static  'home/images/logo.png'  %}">
             </div>
 
             <div class="mobile-nav-toggle-parent">
@@ -83,9 +84,17 @@
                 <div class="drone"><img src="{%  static  'home/images/electronics/drone.png'  %}"></div>
             </div>
             <div class="textBox">
-                <p>Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Tristique senectus et netus et. 
-                    Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. 
-                    Tincidunt dui ut ornare lectus sit amet est placerat. Ullamcorper eget nulla facilisi etiam dignissim. Sed libero enim sed faucibus turpis.</p>
+                <p>
+                    The "Motordriver V1" is designed using
+                    <a href="https://www.autodesk.com/products/eagle/free-download" target="_blank" rel="noopener noreferrer">Eagle</a>
+                    and is a part of a bigger circuit uset to control a dc motor.<br><br><br>
+
+                    The "spider" is controled with 12 servo motors from a Arduino nano.<br><br><br>
+
+                    The drone is controlled with a Arduino nano and also has a gyroscope and accelerometer. 
+                    The battery is underneath the circuit and supplies the ESCs.<br><br><br>
+
+                </p>
             </div>
             
         </section>

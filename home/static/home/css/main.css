@@ -436,6 +436,10 @@ header .logo-parent {
   vertical-align: center;
   -webkit-padding-start: 0.75em;
           padding-inline-start: 0.75em;
+  cursor: pointer;
+}
+header .logo-parent img {
+  left: 0;
 }
 header .logo {
   font-family: "ethnocentric" !important;
