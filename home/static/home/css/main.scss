@@ -335,8 +335,8 @@ header {
     .media{
         position: absolute;
         
-        height: calc(100% - (1em + var(--navHight) + 24px));
-        width: 60%;
+        height: calc(100% - 102px - 2em);
+        width: min(60%, 1263px);
         left: 0;
         bottom: 0;
         overflow: hidden;
@@ -344,14 +344,14 @@ header {
         margin: 0;
 
         .circuit{ 
-            height: 40%;
-            width: 50%;
+            height: 50%;
+            width: 100%;
             position:absolute;
             top: 0;
             right: 0;
             img{
                 position: absolute;
-                width: min(90%, 1024px);
+                width: min(60%);
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -359,40 +359,40 @@ header {
         }
         .soldering{ 
             height: 40%;
-            width: 50%;
+            width: 40%;
             position:absolute;
             top: 0;
             left: 0;
             img{
                 position: absolute;
-                width: min(50%, 285px);
+                width: min(80%, 2850px);
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
         }
         .spider{ 
-            height: 60%;
+            height: 50%;
             width: 50%;
             position:absolute;
             bottom: 0;
             img{
                 position: absolute;
-                width: min(90%, 5700px);  
+                width: min(94%, 5700px);  
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
         }
         .drone{ 
-            height: 60%;
+            height: 50%;
             width: 50%;
             position:absolute;
             bottom: 0;
             right: 0;
             img{
                 position: absolute;
-                width: min(80%, 5700px);  
+                width: min(85%, 5700px);  
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -430,6 +430,10 @@ header {
             margin: 2em;
             color: white;
             font-size: large;
+            a{
+                color: rgb(101, 98, 255);
+                text-decoration: underline;
+            }
         }
     }
     .media{
@@ -505,7 +509,7 @@ header {
             color: white;
             line-height: 2em;
             a{
-                color: blue;
+                color: rgb(101, 98, 255);
                 text-decoration: underline;
             }
         }
@@ -514,7 +518,7 @@ header {
         position: absolute;
         
         height: calc(100% - 102px - 2em);
-        width: 60%;
+        width: min(60%, 1263px);
         left: 0;
         bottom: 0;
         overflow: hidden;

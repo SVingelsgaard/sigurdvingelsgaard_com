@@ -606,8 +606,8 @@ header nav .primary-navigation li a:hover {
 }
 .electrical .media {
   position: absolute;
-  height: calc(100% - (1em + var(--navHight) + 24px));
-  width: 60%;
+  height: calc(100% - 102px - 2em);
+  width: min(60%, 1263px);
   left: 0;
   bottom: 0;
   overflow: hidden;
@@ -615,48 +615,48 @@ header nav .primary-navigation li a:hover {
   margin: 0;
 }
 .electrical .media .circuit {
-  height: 40%;
-  width: 50%;
+  height: 50%;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
 }
 .electrical .media .circuit img {
   position: absolute;
-  width: min(90%, 1024px);
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .electrical .media .soldering {
   height: 40%;
-  width: 50%;
+  width: 40%;
   position: absolute;
   top: 0;
   left: 0;
 }
 .electrical .media .soldering img {
   position: absolute;
-  width: min(50%, 285px);
+  width: min(80%, 2850px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .electrical .media .spider {
-  height: 60%;
+  height: 50%;
   width: 50%;
   position: absolute;
   bottom: 0;
 }
 .electrical .media .spider img {
   position: absolute;
-  width: min(90%, 5700px);
+  width: min(94%, 5700px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .electrical .media .drone {
-  height: 60%;
+  height: 50%;
   width: 50%;
   position: absolute;
   bottom: 0;
@@ -664,7 +664,7 @@ header nav .primary-navigation li a:hover {
 }
 .electrical .media .drone img {
   position: absolute;
-  width: min(80%, 5700px);
+  width: min(85%, 5700px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -701,6 +701,10 @@ header nav .primary-navigation li a:hover {
   margin: 2em;
   color: white;
   font-size: large;
+}
+.mechanical .textBox p a {
+  color: rgb(101, 98, 255);
+  text-decoration: underline;
 }
 .mechanical .media {
   position: absolute;
@@ -775,13 +779,13 @@ header nav .primary-navigation li a:hover {
   line-height: 2em;
 }
 .software .textBox p a {
-  color: blue;
+  color: rgb(101, 98, 255);
   text-decoration: underline;
 }
 .software .media {
   position: absolute;
   height: calc(100% - 102px - 2em);
-  width: 60%;
+  width: min(60%, 1263px);
   left: 0;
   bottom: 0;
   overflow: hidden;
