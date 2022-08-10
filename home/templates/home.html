@@ -26,8 +26,10 @@
         </div>
         <header class="navbar flex">
             <div class="logo-parent" onClick="document.getElementById('hero').scrollIntoView();">
+            
                 <a class="logo">SIGURD</a>
                 <!--<img src="{%  static  'home/images/logo.png'  %}">!-->
+
             </div>
 
             <div class="mobile-nav-toggle-parent">
@@ -49,7 +51,9 @@
                 <h2 class="text">Sigurd Vingelsgaard.</h2>
                 <p> robotics. ish</p>
             </div>
+            
             <div class="pb"><img src="{%  static  'home/images/PB2.png'  %}"></div>
+
         </section>
 
 
@@ -192,7 +196,7 @@
         setTimeout("loader.remove();", 1000);
         
         }
-    setTimeout(hideLoader, 100);//4 is optimal i think
+    setTimeout(hideLoader, 4000);//4 is optimal i think
     
     el.scrollIntoView(true);
     window.scrollBy(0, -10); // Adjust scrolling with a negative value here
