@@ -692,4 +692,67 @@ header {
     .mobile-nav-toggle[aria-expanded="true"] {
         background-image: url('../images/Exit-menu.svg');
     }
+    .media{
+        width: 100%;
+        top: 0;
+        overflow: hidden;
+        z-index: 2;
+        margin: 0;
+
+        .circuit{ 
+            height: 50%;
+            width: 100%;
+            position:absolute;
+            top: 0;
+            right: 0;
+            img{
+                position: absolute;
+                width: min(60%, 600px);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .soldering{ 
+            height: 40%;
+            width: 40%;
+            position:absolute;
+            top: 0;
+            left: 0;
+            img{
+                position: absolute;
+                width: min(80%, 2850px);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .spider{ 
+            height: 50%;
+            width: 50%;
+            position:absolute;
+            bottom: 0;
+            img{
+                position: absolute;
+                width: min(94%, 471px);  
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .drone{ 
+            height: 50%;
+            width: 50%;
+            position:absolute;
+            bottom: 0;
+            right: 0;
+            img{
+                position: absolute;
+                width: min(85%, 426px);  
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
 }
