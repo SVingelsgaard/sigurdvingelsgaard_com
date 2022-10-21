@@ -513,7 +513,7 @@ header nav .primary-navigation li a:hover {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   height: 100%;
-  width: 100%;
+  width: 50%;
 }
 
 .bigBlur {
@@ -545,13 +545,6 @@ header nav .primary-navigation li a:hover {
   height: 200px;
   width: 100%;
   top: calc(2.5em + var(--navHight));
-}
-.projects .background .textBg2 {
-  background-color: rgba(0, 0, 0, 0.85);
-  position: absolute;
-  height: 200px;
-  width: 100%;
-  top: 50%;
 }
 
 .electrical {
