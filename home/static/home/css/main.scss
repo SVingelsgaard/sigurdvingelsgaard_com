@@ -243,37 +243,12 @@ header {
     height: 100%;
     width: 100%;
 }
-.comingSoon{
-    z-index: 3;
+.bigBlur{
+    //z-index: 3;
     background: rgba(0, 0, 0, 0.2); // Make sure this color has an opacity of less than 1
     backdrop-filter: blur(50px); // This be the blur
     height: 100%;
     width: 100%;
-    position: absolute;
-    
-    
-    .comingSoonBg{
-        position: absolute;
-        margin: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 4em;
-        width: 20em;
-        background: black;
-        border-radius: 50px;
-        border: 1px solid;
-        border-color: #ffff;
-
-        text-align: center;
-        vertical-align: middle;
-        line-height: 4em;
-        h1{
-            margin: 0;
-            color: white;
-            font-size: xx-large;
-        }
-    }
 }
 
 .projects{
