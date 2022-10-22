@@ -241,7 +241,7 @@ header {
     background: rgba(0, 0, 0, 0.2); // Make sure this color has an opacity of less than 1
     backdrop-filter: blur(8px); // This be the blur
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 .bigBlur{
     z-index: 3;
@@ -285,15 +285,16 @@ header {
         position: relative;
         height: 100%;
         width: 100%;
+
+    }
+    .textBox{
         .textBg{
             background-color: rgba(0, 0, 0, 0.85);
             position: absolute;
             height: 100%;
-            width: 40%;
+            width: 100%;
             right: 0;
         }
-    }
-    .textBox{
         position: absolute;
         margin: 0;
         top: 102px;
